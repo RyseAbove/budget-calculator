@@ -9,22 +9,23 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li class="nav-links"><a href="index.html"><img src=""
-            alt="website logo"></a></li>
-            <li class="nav-links"><a href="calculator.html">Career Options</a></li>
-            <li class="nav-links"><a href="checkbook.html">Checkbook</a></li>
-        </ul>
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-links"><a href="index.html">Home</a></li>
+                <li class="nav-links"><a href="calculator.html">Career Options</a></li>
+                <li class="nav-links"><a href="checkbook.html">Checkbook</a></li>
+            </ul>
+        </nav>
     </header>
 <main>
-<h1>Income calculator</h1>
+<h1>Calculator</h1>
 <ol>
     <li class="income-pre">What is your career option?</li>
     <input type="text" name="career-option" id="career-option">
     <li class="income-pre">What is your gross annual income?</li>
-    <input type="text" name="gross-annual" id="gross-annual">
+    <span id="GAI"></span>
     <li class="income-pre">What is your <b>Gross Monthly Income</b>?</li>
-    <input type="text" name="gross-monthly" id="gross-monthly">
+    <span id="GMI"></span>
 </ol>
     <section class="income-calculator">
         <h3>Pay Period Deductions</h2>
