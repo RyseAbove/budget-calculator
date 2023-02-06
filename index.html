@@ -11,29 +11,68 @@
     <header>
         <nav>
             <ul class="nav-bar">
-                <li class="nav-links"><a href="index.html">Home</a></li>
-                <li class="nav-links"><a href="calculator.html">Calculator</a></li>
-                <li class="nav-links"><a href="checkbook.html">Checkbook</a></li>
+                <li class="nav-links"><a href="#about">About</a></li>
+                <li class="nav-links"><a href="#calculator">Calculator</a></li> 
             </ul>
         </nav>
     </header>
 <main>
 
-<article class="half">
+<article class="half" id="about">
     <section class="one-half">
         <h2>About the Project</h2>
         <p>The goal of this project was to create a functioning calculator that you can use to calculate your projected income in the future depending on your selected career.</p>
+        <h2>Why use a Budget Calculator?</h2>
+        <p>A budget calculator is usefull as it can simplify the process of budgeting and it can show the user their projected income. It can also help with finding out how much you can spend on other, more expensive, things (houses, cars, etc.).</p>
     </section>
     <section class="one-half">
         <h2>What is a Budget Calculator?</h2>
         <p>A budget calculator is used by figuring out how much money you will make after taxes, bills, and other types of payments you have to make per month.</p>
-</section>
+        <h2>How to Use?</h2>
+        <p>To use the calculator, the user must first choose a career. This will then allow the computer to figure out what you would earn. You can then use this information in many different situations as mentioned before.</p>
+    </section>
 </article>
 </main>
 
+<h2 id="calculator">Calculator</h1>
+<ol>
+    <li class="income-pre">What is your career option?</li>
+    <input type="text" name="career-option" id="career-option">
+    <li class="income-pre">What is your gross annual income?</li>
+    <span id="GAI"></span>
+    <li class="income-pre">What is your <b>Gross Monthly Income</b>?</li>
+    <span id="GMI"></span>
+</ol>
+    <section class="income-calculator">
+        <h3>Pay Period Deductions</h2>
+            <p>Federal Taxes</p> 
+            <span id="federal-taxes"></span>
+            <p>State Taxes</p>
+            <span id="state-taxes"></span>
+            <p>Social Security</p>
+            <span id="social-security"></span>
+            <p>Medicare</p>
+            <span id="medicare"></span>
+            <p>State Disablity</p>
+            <span id="state-disablity"></span>
+            <p>Retirement Investment</p>
+            <span id="retirement-disabilty"></span>
+            <p>Medical Insurance</p>
+            <span id="medical-insurance"></span>
+            <p><b>Total Deductions</b></p>
+            <span id="total-deductions"></span>
+    </section>
+    <hr>
+    <section class="house-payment">
+        <h3>Calculate How Much of a House Payment You Can Afford:</h1>
+        <p>Gross Monthly Income (#3 above) x 33% (0.33) = Maximum Monthly House Payment</p>
+    </section>
+
+
+
 <footer>
 <!-- add footer here -->
-<hr>
+<hr id="nerd">
 </footer>
 
     <style href="/css-and-javascript/javascript.js"></style>

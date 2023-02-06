@@ -1,17 +1,35 @@
+a {
+    text-decoration: none;
+}
+
 .nav-bar {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 6vw;
+}
+
+.nav-links {
+    font-size: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border: 2px solid black;
 }
 
 .half {
-    width: 42%;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 6vw;
 }
 
 .one-half {
+    padding-left: 2vw;
+    padding-right: 2vw;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
