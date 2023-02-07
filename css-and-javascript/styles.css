@@ -33,3 +33,16 @@ a {
     flex-direction: column;
     width: 30%;
 }
+
+.calculator {
+    border: 1px solid black;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3vw;
+}
+
+.income-calculator {
+    
+}
