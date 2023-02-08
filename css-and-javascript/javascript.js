@@ -83,17 +83,17 @@ function checkFunction() {
 
             //Math stuff
             let GAI = Number(data[i][1]);
-            let GMI = GAI / 12; //Gross Monthly Income
-            let FT = GMI * .12; //Federal Taxes
-            let ST = GMI * .07; //State Taxes
-            let SS = GMI * .062; //Social Security
-            let MC = GMI * .0145; //Medicare
-            let SD = GMI * .01; //State Disablity
-            let RI = GMI * .05; //Retirement Investment
-            let MI = + 180; //Medical Insurance
-            let TD = FT + ST + SS + MC + SD + RI + MI; //Total Deductions
-            let NMI = GMI - TD; //Net Monthly Income
-            let HP = GMI * 0.33; //House Payment
+            let GMI = Math.round(GAI / 12); //Gross Monthly Income
+            let FT = Math.round(GMI * .12); //Federal Taxes
+            let ST = Math.round(GMI * .07); //State Taxes
+            let SS = Math.round(GMI * .062); //Social Security
+            let MC = Math.round(GMI * .0145); //Medicare
+            let SD = Math.round(GMI * .01); //State Disablity
+            let RI = Math.round(GMI * .05); //Retirement Investment
+            let MI = 180; //Medical Insurance
+            let TD = Math.round(FT + ST + SS + MC + SD + RI + MI); //Total Deductions
+            let NMI = Math.round(GMI - TD); //Net Monthly Income
+            let HP = Math.round(GMI * 0.33); //House Payment
 
             //Placing each value in its correct spot
             document.getElementById('GAI').innerHTML = ('$ ' + GAI);
@@ -106,8 +106,8 @@ function checkFunction() {
             document.getElementById('RI').innerHTML = ('$ ' + RI);
             document.getElementById('MI').innerHTML = ('$ ' + MI);
             document.getElementById('TD').innerHTML = ('$ ' + TD);
-            document.getElementById('NMI').innerHTML = ('$ ' + NMI)
-            document.getElementById('HP').innerHTML = ('$ ' + HP)
+            document.getElementById('NMI').innerHTML = ('$ ' + NMI);
+            document.getElementById('HP').innerHTML = ('$ ' + HP);
         }
     }
 } 
