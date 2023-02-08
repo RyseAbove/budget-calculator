@@ -48,6 +48,7 @@ a:visited {
 }
 
 .house-payment {
+    margin-top: 2vw;
     border: 1px solid black;
     padding-left: 1vw;
     padding-right: 1vw;

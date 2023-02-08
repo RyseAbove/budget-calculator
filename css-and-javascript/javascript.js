@@ -47,8 +47,8 @@ let data = [
     [ 'Media/Communications', 45150 ],
     [ 'Medical RepairTech.', 52500 ],
     [ 'Military', 55650 ],
-    [ 'Nuse', 66150 ],
-    [ 'Nutitionist', 45150 ],
+    [ 'Nurse', 66150 ],
+    [ 'Nutritionist', 45150 ],
     [ 'Oceanographer', 69300 ],
     [ 'Pastor', 50400 ],
     [ 'PGBEATT Technician', 78750 ],
@@ -70,6 +70,7 @@ let data = [
     [ 'Welder/Metal Specialist', 47250 ],
     [ 'Wind EnergyTechnician', 56700 ]
 ]
+
 let jobInput = document.getElementById('career-option');
 jobInput.addEventListener('change', checkFunction);
 
