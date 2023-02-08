@@ -2,6 +2,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: black;
+}
+
 .nav-bar {
     list-style: none;
     display: flex;
@@ -43,6 +47,21 @@ a {
     margin-bottom: 3vw;
 }
 
-.income-calculator {
-    
+.house-payment {
+    border: 1px solid black;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3vw;
+}
+
+span {
+    border: 1px solid black;
+    padding-left: 1vw;
+    padding-right: 5vw;
+}
+
+.HP {
+    margin-left: 1vw;
 }

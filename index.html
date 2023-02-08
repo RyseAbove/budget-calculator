@@ -40,7 +40,7 @@
         <li class="income-pre">What is your career option?</li>
         <input type="text" name="career-option" onchange="checkFunction()" id="career-option" placeholder="Insert Career Option Here" value="">
         <li class="income-pre">What is your gross annual income?</li>
-        <span id="GAI">500</span>
+        <span id="GAI"></span>
         <li class="income-pre">What is your <b>Gross Monthly Income</b>?</li>
         <span id="GMI"></span>
     </ol>
@@ -62,20 +62,26 @@
             <span id="SD"></span>
             <hr>
             <p>Retirement Investment</p>
-            <span id="RD"></span>
+            <span id="RI"></span>
             <hr>
             <p>Medical Insurance</p>
             <span id="MI"></span>
             <hr>
             <p><b>Total Deductions</b></p>
             <span id="TD"></span>
+            <hr>
+            <p><b>Net Monthly Income</b></p>
+            <span id="NMI"></span>
     </section>
 </section>
     <hr>
-    <section class="house-payment">
+
+<article class="house-payment">
+    <section class="max-house-payment">
         <h3>Calculate How Much of a House Payment You Can Afford:</h1>
-        <p>Gross Monthly Income (#3 above) x 33% (0.33) = Maximum Monthly House Payment</p>
+        <p>Gross Monthly Income x 33% (0.33) = <b><span class="HP" id="HP"></span></b></p>
     </section>
+</article>
 
 <footer>
 <!-- add footer here -->

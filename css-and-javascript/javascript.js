@@ -89,20 +89,24 @@ function checkFunction() {
             let MC = GMI * .0145; //Medicare
             let SD = GMI * .01; //State Disablity
             let RI = GMI * .05; //Retirement Investment
-            let MI = GMI + 180; //Medical Insurance
+            let MI = + 180; //Medical Insurance
             let TD = FT + ST + SS + MC + SD + RI + MI; //Total Deductions
+            let NMI = GMI - TD; //Net Monthly Income
+            let HP = GMI * 0.33; //House Payment
 
             //Placing each value in its correct spot
-            document.getElementById('GAI').innerHTML = GAI;
-            document.getElementById('GMI').innerHTML = GMI;
-            document.getElementById('FT').innerHTML = FT;
-            document.getElementById('ST').innerHTML = ST;
-            document.getElementById('SS').innerHTML = SS;
-            document.getElementById('MC').innerHTML = MC;
-            document.getElementById('SD').innerHTML = SD;
-            document.getElementById('RI').innerHTML = RI;
-            document.getElementById('MI').innerHTML = MI;
-            document.getElementById('TD').innerHTML = TD;
+            document.getElementById('GAI').innerHTML = ('$ ' + GAI);
+            document.getElementById('GMI').innerHTML = ('$ ' + GMI);
+            document.getElementById('FT').innerHTML = ('$ ' + FT);
+            document.getElementById('ST').innerHTML = ('$ ' + ST);
+            document.getElementById('SS').innerHTML = ('$ ' + SS);
+            document.getElementById('MC').innerHTML = ('$ ' + MC);
+            document.getElementById('SD').innerHTML = ('$ ' + SD);
+            document.getElementById('RI').innerHTML = ('$ ' + RI);
+            document.getElementById('MI').innerHTML = ('$ ' + MI);
+            document.getElementById('TD').innerHTML = ('$ ' + TD);
+            document.getElementById('NMI').innerHTML = ('$ ' + NMI)
+            document.getElementById('HP').innerHTML = ('$ ' + HP)
         }
     }
 } 
