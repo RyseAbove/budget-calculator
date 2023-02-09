@@ -91,3 +91,8 @@ td, th {
     justify-content: center;
     text-align: center;
 }
+
+footer {
+    background-color: #efefef;
+    margin: none;
+}
