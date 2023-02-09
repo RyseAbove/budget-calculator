@@ -42,7 +42,7 @@ let data = [
     [ 'Investment Analyst', 66150 ],
     [ 'Lab Technician', 42000 ],
     [ 'Landscaper Horticulture', 48300 ],
-    [ 'lawyer', 86100 ],
+    [ 'Lawyer', 86100 ],
     [ 'Marketing/Sales Manager', 58800 ],
     [ 'Media/Communications', 45150 ],
     [ 'Medical RepairTech.', 52500 ],
@@ -110,5 +110,43 @@ function checkFunction() {
             document.getElementById('HP').innerHTML = ('$ ' + HP);
         }
     }
+    
 } 
 
+//Checkbook
+
+function checkbookMath() {
+
+//Inputs
+let withdrawl_1 = document.getElementById('withdrawl_1').value;
+let withdrawl_2 = document.getElementById('withdrawl_2').value;
+let withdrawl_3 = document.getElementById('withdrawl_3').value;
+let withdrawl_4 = document.getElementById('withdrawl_4').value;
+let withdrawl_5 = document.getElementById('withdrawl_5').value;
+
+let deposit_1 = document.getElementById('deposit_1').value;
+let deposit_2 = document.getElementById('deposit_2').value;
+let deposit_3 = document.getElementById('deposit_3').value;
+let deposit_4 = document.getElementById('deposit_4').value;
+let deposit_5 = document.getElementById('deposit_5').value;
+
+//Outputs
+let output_1 = withdrawl_1 + deposit_1 - balance_1;
+let output_2 = withdrawl_2 + deposit_2 - balance_2;
+let output_3 = withdrawl_3 + deposit_3 - balance_3;
+let output_4 = withdrawl_4 + deposit_4 - balance_4;
+let output_5 = withdrawl_5 + deposit_5 - balance_5;
+
+let balance_1 = NMI;
+let balance_2 = output_1;
+let balance_3 = output_2;
+let balance_4 = output_3;
+let balance_5 = output_4;
+
+document.getElementById('output_1').innerHTML = output_1;
+document.getElementById('output_2').innerHTML = output_2;
+document.getElementById('output_3').innerHTML = output_3;
+document.getElementById('output_4').innerHTML = output_4;
+document.getElementById('output_5').innerHTML = output_5;
+
+} 

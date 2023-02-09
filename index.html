@@ -17,7 +17,7 @@
         </nav>
     </header>
 <main>
-
+<!-- Top about text -->
 <article class="half" id="about">
     <section class="one-half">
         <h2>About the Project</h2>
@@ -33,7 +33,7 @@
     </section>
 </article>
 </main>
-
+<!-- Calculator -->
 <section class="calculator">
 <h2 id="calculator">Calculator</h1>
     <ol class="career-option">
@@ -76,13 +76,65 @@
     </section>
 </section>
     <hr>
-
+<!-- House Payment -->
 <article class="house-payment">
     <section class="max-house-payment">
         <h3>Calculate How Much of a House Payment You Can Afford:</h1>
         <p>Gross Monthly Income x 33% (0.33) = <b><span class="HP" id="HP"></span></b></p>
     </section>
 </article>
+<hr>
+<!-- Checkbook -->
+<table>
+    <tr>
+        <th>Number/Code</th>
+        <th>Date</th>
+        <th>Transaction Description</th>
+        <th>Withdrawl</th>
+        <th>Deposit</th>
+        <th>Balance</th>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="date"></td>
+        <td><input type="text"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="withdrawl-1"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="deposit-1"></td>
+        <td><span id="output-1"></span></td>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="date"></td>
+        <td><input type="text"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="withdrawl-2"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="deposit-2"></td>
+        <td><span id="output-2"></span></td>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="date"></td>
+        <td><input type="text"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="withdrawl-3"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="deposit-3"></td>
+        <td><span id="output-3"></span></td>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="date"></td>
+        <td><input type="text"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="withdrawl-4"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="deposit-4"></td>
+        <td><span id="output-4"></span></td>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input type="date"></td>
+        <td><input type="text"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="withdrawl-5"></td>
+        <td><input onchange="checkbookMath()" value="" type="number" id="deposit-5"></td>
+        <td><span id="output-5"></span></td>
+    </tr>
+</table>
 
 <footer>
 <!-- add footer here -->
