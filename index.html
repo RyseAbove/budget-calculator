@@ -38,7 +38,7 @@
 <h2 id="calculator">Calculator</h1>
     <ol class="career-option">
         <li class="income-pre">What is your career option?</li>
-        <input type="text" name="career-option" onchange="checkFunction()" id="career-option" placeholder="Insert Career Option Here" value="">
+        <input type="text" name="career-option" onchange="checkFunction()" id="career-option" placeholder="Insert Career Option Here" value="" class="career-option-input">
         <li class="income-pre">What is your gross annual income?</li>
         <span id="GAI"></span>
         <li class="income-pre">What is your <b>Gross Monthly Income</b>?</li>
@@ -85,7 +85,8 @@
 </article>
 <hr>
 <!-- Checkbook -->
-<table>
+<section>
+    <table>
     <tr>
         <th>Number/Code</th>
         <th>Date</th>
@@ -134,11 +135,12 @@
         <td><input onchange="checkbookMath()" value="" type="number" id="deposit-5"></td>
         <td><span id="output-5"></span></td>
     </tr>
-</table>
+    </table>
+</section>
 
 <footer>
-<!-- add footer here -->
 <hr>
+<h3 class="footer-h3">Noah Layton <br> CART Web App <br> 2023</h3>
 </footer>
 
     <script src="css-and-javascript/javascript.js"></script>

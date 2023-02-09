@@ -11,6 +11,7 @@ a:visited {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 6vw;
+    margin-top: 3vw;
 }
 
 .nav-links {
@@ -61,3 +62,32 @@ a:visited {
     margin-left: 1vw;
 }
 
+input:not(.career-option-input) {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+table {
+    width: 60%;
+    height: 5vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3vw;
+    border-collapse: collapse;
+    align-self: center;
+    justify-self: center;
+    margin-top: 2vw;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 1vw;
+    margin: 0px;
+}
+
+.footer-h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

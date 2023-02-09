@@ -117,6 +117,7 @@ function checkFunction() {
 
 function checkbookMath() {
 
+    
 //Inputs
 let withdrawl_1 = document.getElementById('withdrawl_1').value;
 let withdrawl_2 = document.getElementById('withdrawl_2').value;
